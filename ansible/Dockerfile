@@ -5,4 +5,6 @@ RUN apt install -y software-properties-common
 RUN add-apt-repository -y --update ppa:ansible/ansible
 RUN apt install -y ansible
 
-ENTRYPOINT ["ansible"]
+WORKDIR /data
+CMD ["/bin/sh"]
+# ENTRYPOINT ["ansible"]
