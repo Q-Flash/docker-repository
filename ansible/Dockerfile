@@ -1,8 +1,8 @@
 FROM ubuntu:latest
 
-apt update
-apt install -y software-properties-common
-add-apt-repository -y --update ppa:ansible/ansible
-apt install -y ansible
+RUN apt update
+RUN apt install -y software-properties-common
+RUN add-apt-repository -y --update ppa:ansible/ansible
+RUN apt install -y ansible
 
 ENTRYPOINT ["ansible"]
