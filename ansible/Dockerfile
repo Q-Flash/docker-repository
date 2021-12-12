@@ -7,4 +7,3 @@ RUN apt install -y ansible
 
 WORKDIR /data
 CMD ["/bin/sh"]
-# ENTRYPOINT ["ansible"]
